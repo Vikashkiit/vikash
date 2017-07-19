@@ -27,7 +27,7 @@ public class UserValidation {
 		if(!matcher.matches()){
 			throw new InvalidUserNameException("INVALID_USERNAME");
 		}
-		return "VALID_USERNAME";
+		return "INVALID_USERNAME";
 		
 	}
 	
