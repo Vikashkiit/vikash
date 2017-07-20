@@ -20,9 +20,9 @@ public class UserValidation {
 
 	
 	
-	public String validateUserName(final String userName){
+	public String validateUserName(final String latestUserName){
 		Pattern pattern = Pattern.compile(USERNAME_PATTERN);
-		Matcher matcher = pattern.matcher(userName);
+		Matcher matcher = pattern.matcher(latestUserName);
 		
 		if(!matcher.matches()){
 			throw new InvalidUserNameException("INVALID_USERNAME");
